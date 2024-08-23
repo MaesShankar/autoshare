@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alfa Romeo AutoShare</title>
+</head>
+<body>
+    <div class="headerbalk">
+        <h1>Auto Delen</h1>
+        <img src="https://cdn.icon-icons.com/icons2/2402/PNG/512/alfa_romeo_logo_icon_145847.png" alt="alfa_romeo_logo_icon_145847" style="width: 10%;">
+    </div>
+
+
+    <div id="beschikbaarheid">
+        <h2 id="statusTitel">Beschikbaarheid</h2>
+        <div id="statusIndicator"></div>
+        <p id="redenTekst"></p>
+    </div>
+
+    <div id="planning" >
+        <h2>Planning</h2>
+        <form id="reserveringForm">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" required>
+            <label for="datum">Datum:</label>
+            <input type="date" id="datum" required>
+            <label for="reden">Reden:</label>
+            <input type="text" id="reden" required>
+            <button type="submit">Toevoegen</button>
+        </form>
+
+        <ul id="planningList" style="overflow-y: scroll; max-height: 200px;">
+            <!-- Hier komt de lijst van reserveringen -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</body>
+<footer>
+    &copy; 2024 AutoShare Shankweb. All rights reserved.
+</footer>
+</html>
